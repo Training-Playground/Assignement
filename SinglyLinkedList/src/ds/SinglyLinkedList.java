@@ -1,6 +1,13 @@
 package ds;
-
+    //Using Arrays is prohibited as well.
 public class SinglyLinkedList {
+
+    public class Node{
+        int data;
+        Node next;
+    }
+        Node head;
+
     public void add(int number){
 
     }
