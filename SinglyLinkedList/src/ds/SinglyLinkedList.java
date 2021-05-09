@@ -6,14 +6,19 @@ public class SinglyLinkedList {
         int data;
         Node next;
     }
-        Node head = null;
+        Node head;
 
     public void add(int number){
         Node node = new Node();
+        node.data = number;
         if(head == null){
             head = node;
         }
-
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp = node;
 
     }
     public void add(int index,int number){
@@ -26,7 +31,11 @@ public class SinglyLinkedList {
         return 0;
     }
     public void print(){
-
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
     }
     public void clear(){
 
