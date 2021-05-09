@@ -6,9 +6,14 @@ public class SinglyLinkedList {
         int data;
         Node next;
     }
-        Node head;
+        Node head = null;
 
     public void add(int number){
+        Node node = new Node();
+        if(head == null){
+            head = node;
+        }
+
 
     }
     public void add(int index,int number){
