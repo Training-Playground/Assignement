@@ -26,6 +26,6 @@ public class SinglyLinkedList {
         return false;
     }
     public boolean empty(){
-        return false;
+        return true;
     }
 }
