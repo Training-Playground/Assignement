@@ -9,5 +9,6 @@ public class SinglyLinkedListTest {
         sll.print();
         sll.add(1,15);
         sll.print();
+        System.out.println(sll.size());
     }
 }
