@@ -65,7 +65,17 @@ public class SinglyLinkedList {
 
     }
     public int get(int index){
-        return 0;
+        if(head == null){
+            throw new RuntimeException("Null");
+        }
+        Node temp = head;
+        int i = 0;
+        while(i < index){
+            temp = temp.next;
+            i++;
+        }
+        System.out.println(temp.data);
+        return temp.data;
     }
     public void print(){
         Node temp = head;
@@ -75,6 +85,11 @@ public class SinglyLinkedList {
         }
     }
     public void clear(){
+        Node temp = head;
+        while(temp != null){
+            temp.data = Integer.parseInt(null);
+            temp = temp.next;
+        }
 
     }
     public int size(){

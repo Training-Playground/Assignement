@@ -15,5 +15,7 @@ public class SinglyLinkedListTest {
         System.out.println(sll.empty());
         sll.remove(1);
         sll.print();
+        System.out.println(sll.get(1));
+
     }
 }
