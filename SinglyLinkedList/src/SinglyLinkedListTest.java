@@ -10,5 +10,7 @@ public class SinglyLinkedListTest {
         sll.add(1,15);
         sll.print();
         System.out.println(sll.size());
+        System.out.println(sll.contains(50));
+        System.out.println(sll.contains(15));
     }
 }

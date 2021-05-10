@@ -74,6 +74,16 @@ public class SinglyLinkedList {
         return size;
     }
     public boolean contains(int number){
+        if(head == null){
+            return false;
+        }
+        Node temp = head;
+        while(temp != null){
+            if(number == temp.data){
+                return true;
+            }
+            temp = temp.next;
+        }
         return false;
     }
     public boolean empty(){
