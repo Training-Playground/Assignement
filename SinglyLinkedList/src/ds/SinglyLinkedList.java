@@ -11,15 +11,17 @@ public class SinglyLinkedList {
     public void add(int number){
         Node node = new Node();
         node.data = number;
+        node.next = null;
         if(head == null){
             head = node;
+            return;
+        }else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = node;
         }
-        Node temp = head;
-        while(temp.next != null){
-            temp = temp.next;
-        }
-        temp = node;
-
     }
     public void add(int index,int number){
 
