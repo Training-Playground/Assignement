@@ -12,5 +12,8 @@ public class SinglyLinkedListTest {
         System.out.println(sll.size());
         System.out.println(sll.contains(50));
         System.out.println(sll.contains(15));
+        System.out.println(sll.empty());
+        sll.remove(1);
+        sll.print();
     }
 }

@@ -44,7 +44,24 @@ public class SinglyLinkedList {
 
         }
     }
-    public void remove(int index){
+    public void remove(int index) {
+
+        if (index == 0) {
+
+            head = head.next;
+        } else {
+            Node temp = head;
+            int i = 0;
+            while (i < index - 1) {
+                temp = temp.next;
+                i++;
+            }
+            System.out.println(i);
+            Node nxtTemp = temp.next;
+            temp.next = nxtTemp.next;
+
+
+        }
 
     }
     public int get(int index){
@@ -87,6 +104,6 @@ public class SinglyLinkedList {
         return false;
     }
     public boolean empty(){
-        return true;
+        return head == null;
     }
 }
