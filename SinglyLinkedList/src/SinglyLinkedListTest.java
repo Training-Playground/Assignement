@@ -7,6 +7,7 @@ public class SinglyLinkedListTest {
         sll.add(20);
         sll.add(30);
         sll.print();
-
+        sll.add(1,15);
+        sll.print();
     }
 }

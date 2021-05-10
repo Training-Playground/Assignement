@@ -24,7 +24,23 @@ public class SinglyLinkedList {
         }
     }
     public void add(int index,int number){
+        Node node = new Node();
+        node.data = number;
+        node.next = null;
+        if (index == 0){
+            node.next = head;
+            head = node;
+        }else{
+            Node temp = head;
+            int i = 0;
+            while(i<index){
+                temp = temp.next;
+                i++;
+            }
+            System.out.println(i);
+            temp.next = node;
 
+        }
     }
     public void remove(int index){
 
