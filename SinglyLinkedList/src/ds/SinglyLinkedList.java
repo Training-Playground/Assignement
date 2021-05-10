@@ -33,12 +33,14 @@ public class SinglyLinkedList {
         }else{
             Node temp = head;
             int i = 0;
-            while(i<index){
+            while(i<index-1){
                 temp = temp.next;
                 i++;
             }
             System.out.println(i);
+            Node nextTemp = temp.next;
             temp.next = node;
+            node.next = nextTemp;
 
         }
     }
