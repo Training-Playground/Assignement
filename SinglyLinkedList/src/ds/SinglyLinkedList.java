@@ -37,7 +37,7 @@ public class SinglyLinkedList {
                 temp = temp.next;
                 i++;
             }
-            System.out.println(i);
+            //System.out.println(i);
             Node nextTemp = temp.next;
             temp.next = node;
             node.next = nextTemp;
@@ -56,7 +56,7 @@ public class SinglyLinkedList {
                 temp = temp.next;
                 i++;
             }
-            System.out.println(i);
+            //System.out.println(i);
             Node nxtTemp = temp.next;
             temp.next = nxtTemp.next;
 
@@ -74,7 +74,7 @@ public class SinglyLinkedList {
             temp = temp.next;
             i++;
         }
-        System.out.println(temp.data);
+        //System.out.println(temp.data);
         return temp.data;
     }
     public void print(){
@@ -83,14 +83,16 @@ public class SinglyLinkedList {
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
+        System.out.println("");
     }
     public void clear(){
         Node temp = head;
         while(temp != null){
-            temp.data = Integer.parseInt(null);
+            temp.data = head.data;
             temp = temp.next;
+            temp.next = head.next;
         }
-
+        head = null;
     }
     public int size(){
         int size= 0;
